@@ -1,0 +1,18 @@
+# Credentials (keep only placeholder examples)
+.env
+.env.*
+!.env.example
+# Local assignment data and SQLite sidecars
+/data/campus_customs.db
+/data/campus_customs.db-*
+/data/products/
+/data.zip
+# Generated environments, builds, and caches
+.venv/
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+*.log

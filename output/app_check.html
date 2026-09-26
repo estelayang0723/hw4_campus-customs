@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Customs — Live Site Test Evidence</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, sans-serif; color: #243447; background: #f4f6f8; }
+    body { margin: 0; }
+    header { padding: 40px 24px; background: #0f4d92; color: white; }
+    header div, main { max-width: 960px; margin: auto; }
+    h1, h2 { font-family: Georgia, serif; line-height: 1.25; }
+    h1 { margin-top: 0; }
+    main { padding: 24px; }
+    section { margin-bottom: 28px; padding: 24px; border: 1px solid #dce3eb; border-radius: 12px; background: white; }
+    h2 { color: #0f4d92; margin-top: 0; }
+    p, figcaption { line-height: 1.65; }
+    figure { margin: 20px 0 0; }
+    img { display: block; width: 100%; height: auto; min-height: 160px; background: #f0f3f6; border: 1px solid #dce3eb; border-radius: 6px; }
+    figcaption { margin-top: 14px; }
+    .status { color: #655012; background: #fff7df; padding: 12px 16px; border-radius: 6px; }
+    code { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <header><div>
+    <h1>Campus Customs: Live Site Test Evidence</h1>
+    <p>Problem 11 — App check</p>
+  </div></header>
+  <main>
+    <p class="status"><strong>Status: screenshot files attached; captions require final review.</strong> This is an evidence template, not a completed test report. Confirm that each attached image supports its caption before submission.</p>
+    <section aria-labelledby="inventory-heading">
+      <h2 id="inventory-heading">1. Database-backed inventory and pricing</h2>
+      <p><strong>Test:</strong> Ask the chat for the price and XS inventory of the Baseball Left Chest Crewneck, then compare its answer with the current catalogue and inventory records. Capture the response and the database comparison together if possible.</p>
+      <figure>
+        <img src="app_check_images/inventory.png.jpeg" alt="Pending screenshot: chat response with product price and size-specific stock, alongside matching database evidence.">
+        <figcaption>Evidence to capture: the assistant reports the selected product’s actual database price and size-specific quantity. When the recorded quantity is zero, the response clearly states that the size is out of stock.</figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="cards-heading">
+      <h2 id="cards-heading">2. Dynamic category-search product cards</h2>
+      <p><strong>Test:</strong> Ask “What hoodies do you have?” and capture the question with the matching product cards. Also click a card to verify that it opens the corresponding single-item page; that navigation needs a separate manual check.</p>
+      <figure>
+        <img src="app_check_images/dynamic_cards.png.jpeg" alt="Pending screenshot: a hoodie category question followed by dynamically returned product cards with images, names, prices, and descriptions.">
+        <figcaption>Evidence to capture: a category question produces matching catalogue cards inside the chat, each displaying a product image, name, price, and short description. This screenshot documents card rendering; clicking through to the correct detail page is checked separately.</figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="usability-heading">
+      <h2 id="usability-heading">3. Out of Stock visual badge</h2>
+      <p><strong>Test:</strong> Capture a product card whose inventory totals zero across all recorded sizes. If the live database has no such item, use an isolated test database with an all-zero product rather than changing real stock just for the screenshot.</p>
+      <figure>
+        <img src="app_check_images/usability_out_of_stock_badge.png.jpeg" alt="Pending screenshot: an Out of Stock badge on a product card with zero total inventory.">
+        <figcaption>Evidence to capture: a product with zero total inventory displays a clear “Out of Stock” badge on its card. The badge lets shoppers recognize unavailability before opening the detail page; one sold-out size alone does not qualify.</figcaption>
+      </figure>
+    </section>
+    <p>Save the images beside this report in <code>app_check_images/</code> as <code>inventory.png.jpeg</code>, <code>dynamic_cards.png.jpeg</code>, and <code>usability_out_of_stock_badge.png.jpeg</code>.</p>
+  </main>
+</body>
+</html>
